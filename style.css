@@ -1,11 +1,12 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: 'Josefin Sans', sans-serif;
+  
 }
 
 /* Typography */
@@ -17,8 +18,9 @@ font-weight: 300;
 
 h1 {
   font-size: 3rem;
-  text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
 }
 
 p {
@@ -26,6 +28,7 @@ p {
   font-weight: 600;
   font-size: 1.3125rem;
   text-align: center;
+  margin: 0;
 }
 
 .logo {
@@ -36,28 +39,44 @@ p {
 
 /* Layout */
 
-.main-content {
-  /* display: flex;
-  flex-direction: column; */
-  padding: 2em 0;
+
+
+.container {
+    display: flex;
+   flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 0; 
+max-width: 400px; 
+margin: 0 auto;  
 }
 
-/* .stack {
+.main-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-} */
-
-img {
-  display: inline-block;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background: center;
-  background-size: cover;
-  padding: 1px 0.5em 3em;
+   flex: 1; 
+  height: 50vh;
 }
 
-.container {
+.side-content {
+  flex: 1;
+  order: -1;
+  height: 100%;
+ 
+}
+
+
+
+img {
+  /* display: inline-block; */
+  /* max-width: 100%; */
+  /* background-repeat: no-repeat; */
+  /* background: center; */
+  /* background-size: cover; */
+  padding: 1px 0.5em 3em; 
+}
+
+/* .container {
   max-width: 425px;
   margin: 0 auto;
 }
@@ -67,4 +86,4 @@ img {
   flex-direction: column;
   justify-content: space-between;
   min-height: 50vh;
-}
+} */
